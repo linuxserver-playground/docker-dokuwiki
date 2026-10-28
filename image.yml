@@ -8,9 +8,9 @@ summary: |-
 upstream:
   url: https://www.dokuwiki.org/dokuwiki/
   version:
-    type: command
-    run: |-
-      docker run --rm alpine:latest sh -c 'apk add xmlstarlet > /dev/null 2>&1 && wget https://download.dokuwiki.org/rss -O - 2>/dev/null | xmlstarlet sel -T -t -v '/rss/channel/item[1]/link' | cut -d'-' -f2-4 | cut -d'.' -f1'
+    type: regex
+    url: https://download.dokuwiki.org/rss
+    pattern: <link>[^<]*dokuwiki-([0-9]{4}-[0-9]{2}-[0-9]{2}[a-z]?)\.tgz</link>
 
 release:
   branch: master
