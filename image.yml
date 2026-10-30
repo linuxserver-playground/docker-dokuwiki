@@ -13,6 +13,13 @@ upstream:
     pattern: <link>[^<]*dokuwiki-([0-9]{4}-[0-9]{2}-[0-9]{2}[a-z]?)\.tgz</link>
     require_assets:
       - 'https://download.dokuwiki.org/src/dokuwiki/dokuwiki-${VERSION}.tgz'
+  sponsor:
+  - name: One-time donation via PayPal
+    url: http://donate.dokuwiki.org
+  - name: Patreon
+    url: https://www.patreon.com/dokuwiki
+  - name: GitHub Sponsors (Andreas Gohr, splitbrain)
+    url: https://github.com/sponsors/splitbrain
 
 release:
   branch: master
