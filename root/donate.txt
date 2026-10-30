@@ -1,0 +1,3 @@
+One-time donation via PayPal: http://donate.dokuwiki.org
+Patreon: https://www.patreon.com/dokuwiki
+GitHub Sponsors (Andreas Gohr, splitbrain): https://github.com/sponsors/splitbrain
