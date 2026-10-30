@@ -11,6 +11,8 @@ upstream:
     type: regex
     url: https://download.dokuwiki.org/rss
     pattern: <link>[^<]*dokuwiki-([0-9]{4}-[0-9]{2}-[0-9]{2}[a-z]?)\.tgz</link>
+    require_assets:
+      - 'https://download.dokuwiki.org/src/dokuwiki/dokuwiki-${VERSION}.tgz'
 
 release:
   branch: master
